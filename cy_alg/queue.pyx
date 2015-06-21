@@ -1,3 +1,5 @@
+# Based on http://docs.cython.org/src/tutorial/clibraries.html
+
 cimport cqueue
 
 cdef class Queue:

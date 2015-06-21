@@ -1,3 +1,5 @@
+# Based on http://docs.cython.org/src/tutorial/clibraries.html
+
 cdef extern from "queue.h" nogil:
     ctypedef struct Queue:
         pass
