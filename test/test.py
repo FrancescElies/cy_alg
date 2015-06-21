@@ -14,3 +14,13 @@ def test_queue_02():
     """
     q = cya.Queue()
     del q
+
+def test_queue_03():
+    """test_queue_03: append
+    """
+    q = cya.Queue()
+    q.append(5)
+    q.append([1,2,3,4])
+    q.append('abcd')
+    q.append({1:'a', 2:'b'})
+
