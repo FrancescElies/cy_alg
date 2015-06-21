@@ -10,10 +10,14 @@ import glob
 VERSION = open('VERSION').read().strip()
 
 # Sources & libraries
-inc_dirs = ['c_alg/src']
+inc_dirs = []
 lib_dirs = []
 libs = []
-sources = glob.glob("cy_alg/*.pyx")
+sources = []
+
+inc_dirs += ['c_alg/src']
+sources += glob.glob("cy_alg/*.pyx")
+sources += glob.glob("c_alg/src/*.c")
 
 setup(
     name="c algorithms in cython",
